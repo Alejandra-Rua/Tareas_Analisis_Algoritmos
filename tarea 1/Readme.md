@@ -19,10 +19,14 @@ Si en algún momento no es posible entregar el cambio exacto, se retorna `False`
 - **Complejidad de espacio:** O(1), porque únicamente se utilizan variables para almacenar la cantidad de billetes de $5 y $10.
 
 ### Evidencia
+
+**Accepted**
 ![Accepted — Lemonade Change](lemonade-change/01_lemonade-change.png)
 
+**Runtime**
 ![Runtime — Lemonade Change](lemonade-change/02_lemonade-change-runtime.png)
 
+**Memory**
 ![Memory — Lemonade Change](lemonade-change/03_lemonade-change-memory.png)
 
 ## 455. Assign Cookies
@@ -44,10 +48,14 @@ De esta manera se evita utilizar una galleta más grande de lo necesario y se ma
 - **Complejidad de espacio:** O(1) de espacio auxiliar, sin considerar la memoria interna utilizada por el método de ordenamiento.
 
 ### Evidencia
+
+**Accepted**
 ![Accepted — Assign Cookies](assign-cookies/01_assign-cookies.png)
 
+**Runtime**
 ![Runtime — Assign Cookies](assign-cookies/02_assign-cookies-runtime.png)
 
+**Memory**
 ![Memory — Assign Cookies](assign-cookies/03_assign-cookies-memory.png)
 
 
