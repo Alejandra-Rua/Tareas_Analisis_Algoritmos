@@ -12,10 +12,9 @@ Después del ordenamiento, se toma la mayor cantidad posible del tipo de caja ac
 - *Complejidad de espacio:* O(1) de espacio auxiliar, sin considerar la memoria interna utilizada por el método de ordenamiento.
 
 ### Evidencia:
-- ![Statement and resolution code — Maximum Units on a Truck](evidencia/01_maximum.png)
-- ![Accepted and runtime — Maximum Units on a Truck](evidencia/02_maximun-rutine.png)
-- ![Accepted and memory — Maximum Units on a Truck](evidencia/03_maximum-memory.png)
-
+<img width="1902" height="907" alt="01_maximum" src="https://github.com/user-attachments/assets/909fbd08-9bc1-4a61-9f83-12f867df4438" />
+<img width="1907" height="912" alt="02_maximun-rutine" src="https://github.com/user-attachments/assets/b7bd07dc-2b6e-4d55-8cdc-644492064c56" />
+<img width="1897" height="905" alt="03_maximum-memory" src="https://github.com/user-attachments/assets/c72971dc-35b0-42e5-8a2b-3bf040b58738" />
 
 ## [55. Jump Game](https://leetcode.com/problems/jump-game/description/)
 
@@ -31,6 +30,8 @@ La decisión greedy consiste en conservar siempre el mejor alcance disponible ha
 - *Complejidad de espacio:* O(1), porque únicamente se utiliza una variable para almacenar el máximo alcance y variables propias del recorrido.
 
 ### Evidencia:
-- ![Statement and resolution code — Jump Game](evidencia/01_jump-game.png)
-- ![Accepted and runtime — Jump Game](evidencia/02_jump-game-rutine.png)
-- ![Accepted and memory — Jump Game](evidencia/03_jum-game-memory.png)
+<img width="1902" height="907" alt="01_jump-game" src="https://github.com/user-attachments/assets/02345f05-02b8-4bca-874d-f933b374f28c" />
+<img width="1907" height="912" alt="02_jump-game-rutine" src="https://github.com/user-attachments/assets/dabffa1d-5633-4f57-b201-7203249e78f1" />
+<img width="1902" height="906" alt="03_jum-game-memory" src="https://github.com/user-attachments/assets/3534e3d9-0f72-4aa8-bc45-84e57e19001d" />
+
+
