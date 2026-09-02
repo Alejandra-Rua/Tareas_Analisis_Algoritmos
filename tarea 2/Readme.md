@@ -24,8 +24,14 @@ Este método aprovecha que los dos arreglos ya están ordenados y evita utilizar
 
 ### Evidencia
 
+**Accepted**
+![Accepted - Merge Sorted Array](merge-sorted-array/01_merge-sorted-array.png)
 
+**Runtime**
+![Runtime - Merge Sorted Array](merge-sorted-array/02_merge-sorted-array-runtime.png)
 
+**Memory**
+![Memory - Merge Sorted Array](merge-sorted-array/03_merge-sorted-array-memory.png)
 
 ## 75. Sort Colors
 
@@ -50,4 +56,14 @@ Este método es adecuado porque solo existen tres valores posibles y permite ord
 - **Complejidad de espacio:** O(1), porque únicamente se utilizan los tres índices `low`, `mid` y `high`.
 
 ### Evidencia
+
+**Accepted**
+![Accepted - Sort Colors](sort-colors/01_sort-colors.png)
+
+**Runtime**
+![Runtime - Sort Colors](sort-colors/02_sort-colors-runtime.png)
+
+**Memory**
+![Memory - Sort Colors](sort-colors/03_sort-colors-memory.png)
+
 
