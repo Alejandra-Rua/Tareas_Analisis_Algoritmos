@@ -77,3 +77,30 @@ O(n × m)
 ### Evidencia de Memory
 
 ![Memory - Longest Common Subsequence](evidencias/longest-common-subsequence-memory.png)
+
+## 435. Non-overlapping Intervals
+
+**Familia:** Greedy
+
+**Idea:**  
+Se ordenan los intervalos según su extremo derecho. Luego se recorren y se conserva cada intervalo que empiece cuando ya terminó el último intervalo aceptado. Elegir siempre el intervalo que termina primero permite dejar disponible la mayor cantidad de espacio posible para los siguientes intervalos.
+
+**Criterio greedy:**  
+En cada paso se selecciona el intervalo compatible que termina más temprano.
+
+**Resultado:**  
+Se maximiza la cantidad de intervalos que se pueden conservar sin solaparse. La cantidad que se debe eliminar es el total de intervalos menos los intervalos conservados.
+
+**Complejidad temporal:**  
+O(n log n), debido al ordenamiento de los intervalos.
+
+**Complejidad espacial:**  
+O(1) de espacio extra, sin considerar el espacio interno utilizado por el algoritmo de ordenamiento.
+
+### Evidencia de Runtime
+
+![Runtime - Non-overlapping Intervals](evidencias/non-overlapping-intervals-runtime.png)
+
+### Evidencia de Memory
+
+![Memory - Non-overlapping Intervals](evidencias/non-overlapping-intervals-memory.png)
