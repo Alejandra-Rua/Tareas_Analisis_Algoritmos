@@ -2,6 +2,9 @@
 
 ## 56. Merge Intervals
 
+**Problema:**  
+https://leetcode.com/problems/merge-intervals/
+
 **Familia:** Ordenamiento
 
 **Idea:**  
@@ -13,16 +16,20 @@ O(n log n), debido al ordenamiento de los intervalos.
 **Complejidad espacial:**  
 O(n), debido a la lista utilizada para almacenar los intervalos resultantes.
 
-### Evidencia de Accepted
+### Evidencia de Accepted / Runtime
 
 ![Accepted - Merge Intervals](evidencias/merge-intervals-accepted.png)
 
-### Evidencia de memoria
+### Evidencia de Memory
 
 ![Memory - Merge Intervals](evidencias/merge-intervals-memory.png)
 
+---
 
 ## 200. Number of Islands
+
+**Problema:**  
+https://leetcode.com/problems/number-of-islands/
 
 **Familia:** Grafos
 
@@ -46,8 +53,12 @@ O(m × n) en el peor caso, debido a la pila de llamadas recursivas de DFS.
 
 ![Memory - Number of Islands](evidencias/number-of-islands-memory.png)
 
+---
 
 ## 1143. Longest Common Subsequence
+
+**Problema:**  
+https://leetcode.com/problems/longest-common-subsequence/
 
 **Familia:** Programación dinámica
 
@@ -78,7 +89,12 @@ O(n × m)
 
 ![Memory - Longest Common Subsequence](evidencias/longest-common-subsequence-memory.png)
 
+---
+
 ## 435. Non-overlapping Intervals
+
+**Problema:**  
+https://leetcode.com/problems/non-overlapping-intervals/
 
 **Familia:** Greedy
 
@@ -105,7 +121,12 @@ O(1) de espacio extra, sin considerar el espacio interno utilizado por el algori
 
 ![Memory - Non-overlapping Intervals](evidencias/non-overlapping-intervals-memory.png)
 
+---
+
 ## 39. Combination Sum
+
+**Problema:**  
+https://leetcode.com/problems/combination-sum/
 
 **Familia:** Backtracking
 
@@ -125,10 +146,10 @@ Si el valor restante es menor que 0, esa rama se detiene porque ya no puede form
 Las llamadas recursivas continúan desde el índice actual, evitando regresar a índices anteriores. De esta forma no se generan permutaciones equivalentes como `[2,3,2]` y `[3,2,2]`.
 
 **Complejidad temporal:**  
-Exponencial en el peor caso. Aproximadamente O(n^(target/min)), donde `n` es la cantidad de candidatos y `min` es el candidato mínimo.
+Exponencial en el peor caso. Puede expresarse como O(n^(target/min)), donde `n` es la cantidad de candidatos y `min` es el valor del candidato mínimo.
 
 **Complejidad espacial:**  
-O(target/min) para la profundidad de la recursión, sin contar el espacio ocupado por las combinaciones de salida.
+O(target/min) para la profundidad máxima de la recursión, sin contar el espacio ocupado por las combinaciones de salida.
 
 ### Evidencia de Runtime
 
