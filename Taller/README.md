@@ -16,7 +16,7 @@ O(n log n), debido al ordenamiento de los intervalos.
 **Complejidad espacial:**  
 O(n), debido a la lista utilizada para almacenar los intervalos resultantes.
 
-### Evidencia de Accepted / Runtime
+### Evidencia de Runtime
 
 ![Accepted - Merge Intervals](evidencias/merge-intervals-accepted.png)
 
