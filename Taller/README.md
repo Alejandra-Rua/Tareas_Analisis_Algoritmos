@@ -104,3 +104,36 @@ O(1) de espacio extra, sin considerar el espacio interno utilizado por el algori
 ### Evidencia de Memory
 
 ![Memory - Non-overlapping Intervals](evidencias/non-overlapping-intervals-memory.png)
+
+## 39. Combination Sum
+
+**Familia:** Backtracking
+
+**Idea:**  
+Se construyen las combinaciones probando candidatos desde un índice determinado. Cada candidato puede reutilizarse varias veces. Cuando la suma alcanza el objetivo, se guarda una copia de la combinación encontrada.
+
+**Elección:**  
+Se agrega un candidato a la combinación actual con `append()`.
+
+**Backtracking:**  
+Después de explorar una posibilidad, se elimina el último elemento con `pop()` para regresar al estado anterior y probar otra alternativa.
+
+**Poda:**  
+Si el valor restante es menor que 0, esa rama se detiene porque ya no puede formar una combinación válida.
+
+**Evitar combinaciones repetidas:**  
+Las llamadas recursivas continúan desde el índice actual, evitando regresar a índices anteriores. De esta forma no se generan permutaciones equivalentes como `[2,3,2]` y `[3,2,2]`.
+
+**Complejidad temporal:**  
+Exponencial en el peor caso. Aproximadamente O(n^(target/min)), donde `n` es la cantidad de candidatos y `min` es el candidato mínimo.
+
+**Complejidad espacial:**  
+O(target/min) para la profundidad de la recursión, sin contar el espacio ocupado por las combinaciones de salida.
+
+### Evidencia de Runtime
+
+![Runtime - Combination Sum](evidencias/combination-sum-runtime.png)
+
+### Evidencia de Memory
+
+![Memory - Combination Sum](evidencias/combination-sum-memory.png)
