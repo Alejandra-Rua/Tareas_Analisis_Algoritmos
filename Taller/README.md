@@ -45,3 +45,35 @@ O(m × n) en el peor caso, debido a la pila de llamadas recursivas de DFS.
 ### Evidencia de Memory
 
 ![Memory - Number of Islands](evidencias/number-of-islands-memory.png)
+
+
+## 1143. Longest Common Subsequence
+
+**Familia:** Programación dinámica
+
+**Idea:**  
+Se construye una tabla `dp` donde `dp[i][j]` representa la longitud de la subsecuencia común más larga entre los primeros `i` caracteres de `text1` y los primeros `j` caracteres de `text2`.
+
+**Estado:**  
+`dp[i][j]` = longitud de la subsecuencia común más larga entre `text1[0..i)` y `text2[0..j)`.
+
+**Caso base:**  
+Si uno de los textos está vacío, la longitud de la subsecuencia común es 0.
+
+**Recurrencia:**  
+Si `text1[i-1] == text2[j-1]`, se suma 1 al valor diagonal anterior.  
+Si son diferentes, se toma el máximo entre ignorar un carácter de `text1` o uno de `text2`.
+
+**Complejidad temporal:**  
+O(n × m)
+
+**Complejidad espacial:**  
+O(n × m)
+
+### Evidencia de Runtime
+
+![Runtime - Longest Common Subsequence](evidencias/longest-common-subsequence-runtime.png)
+
+### Evidencia de Memory
+
+![Memory - Longest Common Subsequence](evidencias/longest-common-subsequence-memory.png)
